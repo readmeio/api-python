@@ -13,5 +13,4 @@ setuptools.setup(name='api',
                  install_requires=[],
                  license='MIT License',
                  zip_safe=False,
-                 keywords='api readme',
-                 classifiers=['Packages'])
+                 keywords='api readme')

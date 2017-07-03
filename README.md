@@ -25,3 +25,8 @@ To see an html output of coverage open ```htmlcov/index.html``` after running th
 
 There is a ```.travis.yml``` file that is set up to run your tests for python 2.7
 and python 3.2, should you choose to use it.
+
+DEV
+===
+
+To release a new version, run `python setup.py sdist upload -r pypi`
