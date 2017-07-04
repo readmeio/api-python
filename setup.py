@@ -1,9 +1,7 @@
 import setuptools
-from api.version import Version
-
 
 setuptools.setup(name='api',
-                 version=Version('1.0.0').number,
+                 version='1.0.0',
                  description='Consume an API from ReadMe Build',
                  long_description=open('README.md').read().strip(),
                  author='ReadMe',
