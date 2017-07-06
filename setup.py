@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='api',
-      version='0.0.3',
+      version='0.0.4',
       description='Consume an API from ReadMe Build',
       url='https://readme.build',
       author='ReadMe',
