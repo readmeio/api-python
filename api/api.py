@@ -28,7 +28,7 @@ class Request():
         self.key = key
 
     def run(self, method, data):
-        out = requests.post('https://api.readme.build/services/%s/%s/invoke' % (self.project, method),
+        out = requests.post('https://api.readme.build/v0/services/%s/%s/invoke' % (self.project, method),
             data=data,
             auth=HTTPBasicAuth(self.key, '')
             )
