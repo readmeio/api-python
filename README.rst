@@ -1,7 +1,9 @@
 
 # Installing this package
 
-`$ pip install api`
+.. code-block:: shell
+
+  $ pip install api
 
 
 # Code sample
