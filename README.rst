@@ -1,14 +1,38 @@
 
-Credits
--------
+# Installing this package
 
-Forked from: https://github.com/p0bailey/python_pip
+```shell
+$ pip install api
+```
 
-Deploying
----------
+# Code sample
 
-Edit setup.py
+Here's how you call it:
 
-Run:
+````python
+import api
+api = api.config('...')
 
-   $ python setup.py sdist upload -r pypi
+val, res = api('temp-deprecated').run('sayHello', {
+    'name': 'hi'
+})
+
+if res.error:
+    print 'oh no'
+else:
+    print val
+````
+
+# Running tests
+
+*How do you run tests?*
+
+# Deploying to the package manager
+
+First, update the version in `setup.py`. Then run:
+
+  python setup.py sdist upload -r pypi
+
+# Credits
+
+  * Forked from (python_pip)[https://github.com/p0bailey/python_pip]
