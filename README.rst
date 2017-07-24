@@ -9,7 +9,7 @@ $ pip install api
 
 Here's how you call it:
 
-````python
+```python
 import api
 api = api.config('...')
 
@@ -21,7 +21,7 @@ if res.error:
     print 'oh no'
 else:
     print val
-````
+```
 
 # Running tests
 
