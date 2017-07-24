@@ -9,6 +9,7 @@
 Here's how you call it:
 
 .. code-block:: python
+
     import api
     api = api.config('...')
 
