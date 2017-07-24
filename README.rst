@@ -37,4 +37,5 @@ First, update the version in `setup.py`. Then run:
 
 # Credits
 
-  * Forked from (python_pip)[https://github.com/p0bailey/python_pip]
+  * Forked from `python_pip 
+<https://github.com/p0bailey/python_pip>`_
