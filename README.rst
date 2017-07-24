@@ -1,13 +1,16 @@
 
-Installing this package
-=======================
+This is a language-specific API client for [ReadMe Build](https://readme.build). It's based on the [api spec](https://github.com/readmeio/api-spec). `Python
+<http://www.python.org/>`_
+
+Installation
+============
 
 .. code-block:: shell
 
   $ pip install api
 
-Code sample
-===========
+Usage
+=====
 
 Here's how you call it:
 
