@@ -1,12 +1,16 @@
 
 # Installing this package
 
+```
+$ pip install api
+```
 
 # Code sample
 
 Here's how you call it:
 
 ```python
+
 import api
 api = api.config('...')
 
@@ -18,6 +22,7 @@ if res.error:
     print 'oh no'
 else:
     print val
+    
 ```
 
 # Running tests
