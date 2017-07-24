@@ -1,29 +1,25 @@
 
 # Installing this package
 
-```
-$ pip install api
-```
+    $ pip install api
+
 
 # Code sample
 
 Here's how you call it:
 
-```python
+    import api
+    api = api.config('...')
 
-import api
-api = api.config('...')
+    val, res = api('temp-deprecated').run('sayHello', {
+        'name': 'hi'
+    })
 
-val, res = api('temp-deprecated').run('sayHello', {
-    'name': 'hi'
-})
-
-if res.error:
-    print 'oh no'
-else:
-    print val
+    if res.error:
+        print 'oh no'
+    else:
+        print val
     
-```
 
 # Running tests
 
