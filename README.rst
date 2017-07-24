@@ -1,6 +1,7 @@
 
-This is a language-specific API client for [ReadMe Build](https://readme.build). It's based on the [api spec](https://github.com/readmeio/api-spec). `Python
-<http://www.python.org/>`_
+This is a language-specific API client for `ReadMe Build
+<https://readme.build>`_. It's based on the `api spec
+<https://github.com/readmeio/api-spec>`_. 
 
 Installation
 ============
