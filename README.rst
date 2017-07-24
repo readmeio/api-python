@@ -41,4 +41,4 @@ First, update the version in `setup.py`. Then run:
 Credits
 =======
 
-  * Forked from https://github.com/p0bailey/python_pip
+* Forked from https://github.com/p0bailey/python_pip
