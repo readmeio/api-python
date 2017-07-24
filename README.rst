@@ -1,13 +1,14 @@
 
 # Installing this package
 
-    $ pip install api
+`$ pip install api`
 
 
 # Code sample
 
 Here's how you call it:
 
+.. code-block:: python
     import api
     api = api.config('...')
 
