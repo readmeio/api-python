@@ -1,12 +1,13 @@
 
-# Installing this package
+Installing this package
+=======================
 
 .. code-block:: shell
 
   $ pip install api
 
-
-# Code sample
+Code sample
+===========
 
 Here's how you call it:
 
@@ -25,16 +26,19 @@ Here's how you call it:
         print val
     
 
-# Running tests
+Running tests
+=============
 
 *How do you run tests?*
 
-# Deploying to the package manager
+Deploying to the package manager
+================================
 
 First, update the version in `setup.py`. Then run:
 
   python setup.py sdist upload -r pypi
 
-# Credits
+Credits
+=======
 
   * Forked from https://github.com/p0bailey/python_pip
