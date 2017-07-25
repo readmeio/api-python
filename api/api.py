@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 import json
+import pkg_resources
+import platform
+import sys
 import re
 import requests
 from requests.auth import HTTPBasicAuth
@@ -38,9 +41,14 @@ class Request():
         # So, 'twitter/math' becomes '@twitter/math'
         service_full = '@%s/%s' % (organization, service) if organization else service
 
-        headers = {}
+        headers = {
+            'X-Build-Meta-Language': 'python@%s' % platform.python_version(),
+            'X-Build-Meta-SDK': 'api@%s' % pkg_resources.require("api")[0].version,
+            'X-Build-Meta-OS': '%s@%s' % (platform.system(), platform.release()),
+        }
+
         if version_override:
-            headers = {'X-Build-Version-Override': version_override}
+            headers['X-Build-Version-Override'] = version_override
 
         out = requests.post('https://api.readme.build/v0/services/%s/%s/invoke' % (service_full, method),
             data=data,
