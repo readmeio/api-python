@@ -53,7 +53,8 @@ class Request():
         out = requests.post('https://api.readme.build/v0/services/%s/%s/invoke' % (service_full, method),
             data=data,
             headers=headers,
-            auth=HTTPBasicAuth(self.key, '')
+            auth=HTTPBasicAuth(self.key, ''),
+            verify=False # NO, bad! But issue with SSL certs
         )
 
         result = Response()
