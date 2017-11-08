@@ -50,8 +50,8 @@ class Request():
         if version_override:
             headers['X-Build-Version-Override'] = version_override
 
-        out = requests.post('https://api.readme.build/v0/services/%s/%s/invoke' % (service_full, method),
-            data=data,
+        out = requests.post('https://api.readme.build/v1/run/%s/%s' % (service_full, method),
+            json=data,
             headers=headers,
             auth=HTTPBasicAuth(self.key, ''),
             verify=False # NO, bad! But issue with SSL certs
